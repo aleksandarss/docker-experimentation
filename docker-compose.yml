@@ -2,7 +2,7 @@ version: '3'
 
 services:
   nginx:
-    build: .
+    image: my-nginx:alpha
     ports:
       - "80:80"
     depends_on:

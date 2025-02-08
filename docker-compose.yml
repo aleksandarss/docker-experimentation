@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  nginx:
+    build: .
+    ports:
+      - "80:80"
+    depends_on:
+      - app
+
+  app:
+    image: docker-experimentation:alpha
+    ports:
+      - "8090:8090"
